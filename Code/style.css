@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.apresentacao_titulo {
+    font-family: "Krona One", sans-serif;
+    font-size: 42px;
+    line-height: 1.3;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.paragrafoInicial-destaque {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+.paragrafo-destaque {
+    color: #22D4FD;
+}
+
+.apresentacao_links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.apresentacao_link { 
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #22D4FD;
+    color: black;
+    text-decoration: none;
+    width: 140px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 10px 0;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.apresentacao_link:hover {
+    background-color: #1ab0d8;
+    transform: scale(1.05);
+}
+
+.profile {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 3px solid #22D4FD;
+}
+
+.sobre-mim, .projetos, .contatos {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(34, 212, 253, 0.5);
+}
+
+.sobre-mim h2, .projetos h2, .contatos h2 {
+    color: #22D4FD;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.projetos-lista {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projeto {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(34, 212, 253, 0.3);
+    width: 250px;
+    text-align: center;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.contatos a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #22D4FD;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contatos a:hover {
+    color: #1ab0d8;
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+}
